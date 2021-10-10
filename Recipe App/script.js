@@ -37,18 +37,25 @@ function addMeal(mealData, random = false){
                     ${random ? `
                     <span class="random">Randome Recipe</span>` 
                 : ``};
-                    <img src="${mealData.strMealThumb}" alt="">
+                    <img src="${mealData.strMealThumb}" alt="${mealData.strMeal}">
                 </div>
                 <div class="meal-body">
-                    <h4>Veggie Veggies</h4>
+                    <h4>${mealData.strMeal}</h4>
                     <button class="icons">
-                        <i class="far fa-heart"></i>
+                        <i class="far fa-heart fav-btn"></i>
                         <i class="far fa-comment"></i>
                         <i class="far fa-share-square"></i>
                     </button>
                 </div>
-            `
+            `;
 
+            const btn = meal.querySelector(".meal-body .fav-btn");
+            btn.addEventListener("click",
+            (e)=>{
+                e.target.classList.toggle("active");
+            });
+
+            meals.appendChild(meal);
 }
 
 
