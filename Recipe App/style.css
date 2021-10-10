@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&family=Montserrat:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif ;
+    margin: 0;
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.mobile-container{
+    width: 40rem;
+    background-color: #fff;
+    box-shadow: 0 0 .5rem rgb(32, 32, 32);
+    border-radius: .3rem;
+    overflow: hidden;
+
+}
+
+img{
+    max-width: 100%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+header input{
+    border-radius: .3rem;
+    /* padding: .5rem 1rem; */
+    border: none;
+    font-family: inherit;
+    height: 3rem;
+    background-color: #d3dad5;
+
+}
+
+.fa-search{
+    color:#3c5268;
+    font-size: 2rem;
+}
+
+header button{
+    border: none;
+    margin-left: .8rem;
+}
+
+header button .fa-search:hover{
+    color: #262e36;
+    transition: 1s;
+    transform-style: preserve-3d;
+    transform:  rotateX(360deg);
+}
+
+.fav-container{
+    text-align: center;
+    padding: 1rem;
+    /* background-color: ; */
+}
+
+.fav-meals{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.fav-meals li{
+    width: 8.5rem;
+}
+
+.fav-meals li img{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    border: .2rem solid #ffffff1a;
+    box-shadow: 0 0 1rem .2rem #3333331a;
+    /* justify-content: space-between; */
+    object-fit: cover;
+}
+
+.fav-meals li img:hover{
+    transition: .5s ease-in;
+    opacity: .7;
+}
+
+.fav-meals li span{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    
+
+}
+
+.meal{
+    margin: 1.5rem;
+    box-shadow: 0 0 1rem .2rem #3333331a;
+    border-radius: .3rem;
+    overflow: hidden;
+}
+
+.meal-header{
+    position: relative;
+}
+
+.meal-header .random{
+    position: absolute;
+    top: 1rem;
+    background-color: #fff;
+    padding: .25rem 1rem;
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+}
+
+.meal-header img{
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.meal-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    padding: .8rem;
+}
+
+.meal-body h4{
+    margin: 0;
+
+}
+
+.meal-body button{
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+
+}
+
+.meal-body .icons i{
+    margin: .5rem;
+    cursor: pointer;
+}
+
+.meal-body .icons .fa-heart .active{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
